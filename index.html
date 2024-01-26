@@ -3,126 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Information - Philippines</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"">
-    <link rel=" stylesheet" href="./css/main.css">
-    <style>
-        .fullscreen-bg {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            overflow: hidden;
-            z-index: -100;
-        }
-
-        .fullscreen-bg img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        .overlay-text {
-            width: 100vw;
-            height: 100vh;
-            object-fit:cover;
-            /* transform: translate(-50%, -50%); */
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2px;
-        }
-
-    </style>
-    <script src="script.js" defer></script>
+    <title>Country Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <div class="fullscreen-bg">
-        <img src="Untitled design.png" alt="Full Screen Background" class="img-fluid">
-    </div>
-    <div class="overlay-text">
-</body>
     <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="text-center mb-4" href="#">Country Quest</a>
-                    <form id="countryForm" class="text-center mb-3">
-                        <div class="input-group mb-3">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" name="home">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" name="search">Search Countries</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" name="about">About us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" name="contact">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-            </nav>
-        </header>
-
-
-    </div>
-    <div class="container2 mt-5">
-        <h1 class="text-center mb-4">Country Quest</h1>
-        <form id="countryForm" class="mb-3">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Phillippines" id="countryName"
-                    aria-label="Country Name">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-warning">Search</button>
-                </div>
-            </div>
+        <h1>Country Quest</h1>
+        <form id="countryForm">
+            <input type="text" id="countryName" placeholder="Country Name">
+            <button type="submit">Search</button>
         </form>
-        
-        <div id="countryInfo" class="hidden">
-            <h2 id="countryName"></h2>
-            <div id="countryFlag"></div>
-            <h3>Flag</h3>
-            <img src="Untitled design (1).png" class="img-thumbnail" alt="...">
-
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush" style="color:black">
-                <li class="list-group-item">Country Capital: Manila</li>
-                <li class="list-group-item">Currencies: Philippine Peso </li>
-                <li class="list-group-item">Languages: Main Languages are Fillipino and English, but there are 12 different main dialects.</li>
-            </ul>
-        </div>
+        <div id="countryInfo"></div>
     </div>
-
-    <footer>
-        <div class="container3 mb-4">
-        <div class="footer">
-            <img src="download (1).jpeg" class="rounded float-start" alt="...">
-            <img src="download (2).jpeg" class="rounded float-end" alt="...">
-            <img src="download (3).jpeg" class="rounded float-end" alt="...">
-            <div class="footer-text">
-                <li><a href="https://policies.google.com/terms?hl=en-US">Conditions of use</a></li>
-                <li><a href="https://policies.google.com/terms?hl=en-US">Privacy Policy</a></li>
-                <li><a href="https://www.google.com/intl/en_us/policies/terms/archive/20070416/">Help</a></li>
-                <p>&copy; Valerie McCray Vodovnik 2024</p>
-            </div>
-        </div>
-    </div>
-    </footer>
-
-
+    <script src="index.js"></script>
 </body>
 
 </html>
